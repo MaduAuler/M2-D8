@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .row .row-cols-1 .row-cols-md-3 {
+            background-color: #F8F8F8;
+            padding-top: 3rem;
+        }
+
+        .btn {
+            margin: 0;
+        }
+
+        .columnOne {
+            height: 400px;
+            text-align: center;
+            border: 3px solid;
+            padding: 10%;
+            border-top-left-radius: 5%;
+            border-bottom-left-radius: 5%;
+        }
+
+        .columnTwo {
+            padding-bottom: 5%;
+            border-top: 3px solid;
+            border-bottom: 3px solid;
+            border-right: 3px solid;
+        }
+
+        .partOne {
+            border-top-right-radius: 5%;
+            border-top: 3px solid;
+            border-right: 3px solid;
+            background-color: rgb(238, 238, 171);
+        }
+
+        .partTwo {
+            border-right: 3px solid;
+            background-color: rgb(214, 214, 102);
+        }
+
+        .partThree {
+            border-right: 3px solid;
+            border-bottom: 3px solid;
+            border-bottom-right-radius: 5%;
+            background-color: rgb(201, 201, 24);
+            ;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+
+            </div>
+    </nav>
+    <div class="container">
+        <h2 class="text-center">Exercise 1</h2>
+
+        <div class="row">
+
+            <div class="col-6 d-flex align-items-center justify-content-center bg-success columnOne">
+                First Column
+                Height 400px
+                Green-ish background
+                Text centered
+            </div>
+            <div class="col-2 d-flex flex-column justify-content-end bg-primary columnTwo">
+                Second columnOn
+                Text to the bottom
+                Bold
+                Blueish background
+            </div>
+            <div class="col-4">
+                <div class="row h-100">
+                    <div class="col-12 d-flex align-items-center justify-content-center partOne"> third column part
+                        1</div>
+                    <div class="col-12 d-flex align-items-center justify-content-center partTwo"> third column part
+                        2</div>
+                    <div class="col-12 d-flex align-items-center justify-content-center partThree"> third column
+                        part 3</div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <h2 class="text-center">Exercise 2</h2>
+        <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                        Free
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">0$ / mo</h5>
+                        <p class="card-text">10 users included <br> 2GB of storage <br> Email support <br> Help center
+                            access</p>
+                        <a href="#" class="btn btn-outline-primary btn-block">Sign up for free</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                        Pro
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">15$ / mo</h5>
+                        <p class="card-text">20 users included <br> 10GB of storage <br> Priority email support <br>
+                            Help center access</p>
+                        <a href="#" class="btn btn-primary btn-block">Get started</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                        Enterprise
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">29$ / mo</h5>
+                        <p class="card-text">30 users included <br> 15GB of storage <br> Phone and email support <br>
+                            Help center access</p>
+                        <a href="#" class="btn btn-primary btn-block">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="container">
+        <h1 class="text-center mt-5">Exercise 3</h1>
+        <p class="text-center">And this could be the video part of your website!Here you can add all the video content,
+            displayed inside
+            cards</p>
+
+        <div class="row row-cols-1 row-cols-md-3">
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="download.png" class="mw-100" class="card-img-top" alt="download.png" style="  height:
+                        200px;">
+                    <div class=" card-body">
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary btn-sm ">View</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
+                            </div>
+                            <div>
+                                <p class="card-text"><small class="text-muted">9 mins </small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="download.png" class="mw-100" class="card-img-top" alt="download.png" style="  height:
+                        200px;">
+                    <div class=" card-body">
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
+                            </div>
+                            <div>
+                                <p class="card-text"><small class="text-muted">9 mins </small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="download.png" class="mw-100" class="card-img-top" alt="download.png" style="  height:
+                        200px;">
+                    <div class=" card-body">
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
+                            </div>
+                            <div>
+                                <p class="card-text"><small class="text-muted">9 mins </small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="download.png" class="mw-100" class="card-img-top" alt="download.png" style="  height:
+                        200px;">
+                    <div class=" card-body">
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
+                            </div>
+                            <div>
+                                <p class="card-text"><small class="text-muted">9 mins </small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="download.png" class="mw-100" class="card-img-top" alt="download.png" style="  height:
+                        200px;">
+                    <div class=" card-body">
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
+                            </div>
+                            <div>
+                                <p class="card-text"><small class="text-muted">9 mins </small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="download.png" class="mw-100" class="card-img-top" alt="download.png" style="  height:
+                        200px;">
+                    <div class=" card-body">
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
+                            </div>
+                            <div>
+                                <p class="card-text"><small class="text-muted">9 mins </small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="download.png" class="mw-100" class="card-img-top" alt="download.png" style="  height:
+                        200px;">
+                    <div class=" card-body">
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
+                            </div>
+                            <div>
+                                <p class="card-text"><small class="text-muted">9 mins </small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="download.png" class="mw-100" class="card-img-top" alt="download.png" style="  height:
+                        200px;">
+                    <div class=" card-body">
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
+                            </div>
+                            <div>
+                                <p class="card-text"><small class="text-muted">9 mins </small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="download.png" class="mw-100" class="card-img-top" alt="download.png" style="  height:
+                        200px;">
+                    <div class=" card-body">
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
+                            </div>
+                            <div>
+                                <p class="card-text"><small class="text-muted">9 mins </small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <h1 class="text-center m-3">Exercise 4</h1>
+        <p class="text-center m-3 ">Structure this section as a blog! Check the image and recreat as best as you can!
+        </p>
+
+        <div class="d-flex mt-3 ">
+            <div class="mr-4 ">
+                <h1>Page Heading </h1>
+                <div class="card mb-3">
+                    <img src="post.jpg" class="card-img-top" alt="post.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+
+                        <button type="button" class="btn btn-primary">Read More <img src="arrow-right.svg">
+                        </button>
+                    </div>
+                    <div class="card-footer">
+                        Posted on January 10, 2020 by <a href="#">Admin</a>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <img src="post.jpg" class="card-img-top" alt="post.jpg" style=" width: 750px; height: 300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+
+                        <button type="button" class="btn btn-primary">Read More <img src="arrow-right.svg"></button>
+                    </div>
+                    <div class="card-footer">
+                        Posted on January 12, 2020 by <a href="#">Admin</a>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <img src="post.jpg" class="card-img-top" alt="post.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural
+                            lead-in to additional content. This content is a little bit longer.</p>
+
+                        <button type="button" class="btn btn-primary">Read More <img src="arrow-right.svg"></button>
+                    </div>
+                    <div class="card-footer">
+                        Posted on January 01, 2020 by <a href="#">Admin</a>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-link border"><img src="arrow-left.svg">
+                    Older</button><button type="button" class="btn btn-link border" style="color:black">Newer <img
+                        src="arrow-right.svg"></button>
+            </div>
+
+
+            <div>
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h5 class="card-title">Find in my blog</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Search for..."
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2">Search!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h5 class="card-title">Categories</h5>
+                        </div>
+                        <div class="card-body d-flex justify-content-between ">
+                            <div class="d-flex flex-column">
+                                <a href="#">Web Design </a>
+                                <a href="#">HTML</a>
+                                <a href="#">CSS</a>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a href="#">JavaScript</a>
+                                <a href="#">SASS</a>
+                                <a href="#">Bootstrap4</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Widgets</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Usually here you can put your custom widget to ehence the user
+                            experience</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
